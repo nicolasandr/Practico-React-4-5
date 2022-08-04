@@ -1,9 +1,9 @@
 import React from "react";
 
-const Titulo = (props) => {
+const Titulo = () => {
   return (
     <div>
-      <h1 className="display-4 text-center">Lista tareas {props.comision}</h1>
+      <h1 className="display-1 text-center">Bienvenidos</h1>
       <hr />
     </div>
   );
