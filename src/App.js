@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Subtitulo from './components/Subtitulo';
+import Titulo from './components/Titulo';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Formulario from './components/Formulario';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+//creamos nuestro primer componente
+const App = () => {
+    return (
+      <section className='container my-5'>
+        <div>
+          <Titulo comision='c2i'></Titulo>
+          <Subtitulo></Subtitulo>
+          <Formulario></Formulario>
+         
+        </div>
+        </section>
+    );
+};
 
 export default App;
